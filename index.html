@@ -32,8 +32,30 @@
   <main>
     <section class="slider" aria-label="Featured coffee photos" aria-roledescription="carousel">
       <div class="slides">
-        <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 of 4" style="background:linear-gradient(135deg,#3a2418,#1e3932)">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1800&q=80" alt="Latte with delicate leaf art in a white cup" loading="eager" onerror="this.remove()" />
+        <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 of 4">
+          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Overhead view of a latte with delicate leaf art">
+            <defs>
+              <radialGradient id="woodA" cx="62%" cy="42%" r="80%"><stop offset="0%" stop-color="#7a5238"/><stop offset="70%" stop-color="#4a3020"/><stop offset="100%" stop-color="#2c1c12"/></radialGradient>
+              <radialGradient id="cremaA" cx="46%" cy="42%" r="62%"><stop offset="0%" stop-color="#d3a874"/><stop offset="55%" stop-color="#b07f4c"/><stop offset="100%" stop-color="#8a5c32"/></radialGradient>
+              <radialGradient id="cupA" cx="42%" cy="38%" r="70%"><stop offset="0%" stop-color="#fffdf9"/><stop offset="80%" stop-color="#f0e9dd"/><stop offset="100%" stop-color="#ddd2c1"/></radialGradient>
+              <filter id="blurA"><feGaussianBlur stdDeviation="9"/></filter>
+            </defs>
+            <rect width="1600" height="900" fill="url(#woodA)"/>
+            <ellipse cx="1090" cy="500" rx="360" ry="130" fill="#000" opacity=".28" filter="url(#blurA)"/>
+            <g class="steam" opacity=".16" filter="url(#blurA)" stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none">
+              <path d="M1030 250 C1010 190 1070 160 1050 100"/><path d="M1120 250 C1100 190 1160 160 1140 100"/>
+            </g>
+            <circle cx="1090" cy="450" r="340" fill="url(#cupA)"/>
+            <circle cx="1090" cy="450" r="340" fill="none" stroke="#c9bda9" stroke-width="3" opacity=".6"/>
+            <circle cx="1090" cy="450" r="278" fill="url(#cremaA)"/>
+            <circle cx="1090" cy="450" r="255" fill="#fff" opacity=".12"/>
+            <path d="M1090 250 C990 340 990 500 1090 640 C1190 500 1190 340 1090 250 Z" fill="#fffdf7" opacity=".93"/>
+            <g stroke="#8a5c32" stroke-width="5" opacity=".45" fill="none">
+              <path d="M1045 320 Q1090 342 1135 320"/><path d="M1035 380 Q1090 404 1145 380"/>
+              <path d="M1035 440 Q1090 464 1145 440"/><path d="M1042 500 Q1090 522 1138 500"/><path d="M1055 558 Q1090 576 1125 558"/>
+            </g>
+            <path d="M1090 636 L1075 690 L1105 690 Z" fill="#fffdf7" opacity=".93"/>
+          </svg>
           <div class="slide-caption">
             <div class="container">
               <p class="eyebrow">Roasted daily · Since 2014</p>
@@ -47,17 +69,73 @@
           </div>
           <span class="slide-tag">Signature Latte</span>
         </div>
-        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4" style="background:linear-gradient(135deg,#5a3a22,#241812)">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80" alt="Overhead view of a cappuccino with foam art" loading="lazy" onerror="this.remove()" />
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4">
+          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Overhead view of a cappuccino with a foam heart">
+            <defs>
+              <radialGradient id="woodB" cx="60%" cy="40%" r="82%"><stop offset="0%" stop-color="#5c3a24"/><stop offset="70%" stop-color="#38230f"/><stop offset="100%" stop-color="#1f130a"/></radialGradient>
+              <radialGradient id="cremaB" cx="45%" cy="40%" r="64%"><stop offset="0%" stop-color="#c79764"/><stop offset="55%" stop-color="#9a6a3c"/><stop offset="100%" stop-color="#6e401f"/></radialGradient>
+              <radialGradient id="cupB" cx="42%" cy="38%" r="70%"><stop offset="0%" stop-color="#fdfaf4"/><stop offset="82%" stop-color="#efe7da"/><stop offset="100%" stop-color="#d8ccb9"/></radialGradient>
+              <filter id="blurB"><feGaussianBlur stdDeviation="9"/></filter>
+            </defs>
+            <rect width="1600" height="900" fill="url(#woodB)"/>
+            <ellipse cx="1080" cy="505" rx="350" ry="128" fill="#000" opacity=".3" filter="url(#blurB)"/>
+            <g class="steam" opacity=".16" filter="url(#blurB)" stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none">
+              <path d="M1020 255 C1000 195 1060 165 1040 105"/><path d="M1130 255 C1110 195 1170 165 1150 105"/>
+            </g>
+            <circle cx="1080" cy="450" r="330" fill="url(#cupB)"/>
+            <circle cx="1080" cy="450" r="270" fill="url(#cremaB)"/>
+            <circle cx="1080" cy="450" r="270" fill="none" stroke="#5a3418" stroke-width="10" opacity=".35"/>
+            <path d="M1080 372 C1058 336 1000 336 992 388 C986 430 1046 470 1080 520 C1114 470 1174 430 1168 388 C1160 336 1102 336 1080 372 Z" fill="#fbf3e6" opacity=".92"/>
+          </svg>
           <span class="slide-tag">Velvety Cappuccino</span>
         </div>
-        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4" style="background:linear-gradient(135deg,#2d1a10,#1e3932)">
-          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1800&q=80" alt="A rich espresso in a small cup on a saucer" loading="lazy" onerror="this.remove()" />
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4">
+          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A rich espresso with golden crema in a small cup">
+            <defs>
+              <radialGradient id="woodC" cx="60%" cy="40%" r="82%"><stop offset="0%" stop-color="#3a2211"/><stop offset="70%" stop-color="#231407"/><stop offset="100%" stop-color="#120a04"/></radialGradient>
+              <radialGradient id="cremaC" cx="44%" cy="40%" r="66%"><stop offset="0%" stop-color="#a56b34"/><stop offset="45%" stop-color="#77471f"/><stop offset="100%" stop-color="#3d2410"/></radialGradient>
+              <radialGradient id="cupC" cx="42%" cy="38%" r="70%"><stop offset="0%" stop-color="#fbf8f2"/><stop offset="82%" stop-color="#ece3d5"/><stop offset="100%" stop-color="#cfc3b0"/></radialGradient>
+              <filter id="blurC"><feGaussianBlur stdDeviation="9"/></filter>
+            </defs>
+            <rect width="1600" height="900" fill="url(#woodC)"/>
+            <ellipse cx="1090" cy="510" rx="320" ry="120" fill="#000" opacity=".34" filter="url(#blurC)"/>
+            <g class="steam" opacity=".18" filter="url(#blurC)" stroke="#fff" stroke-width="12" stroke-linecap="round" fill="none">
+              <path d="M1050 300 C1030 245 1085 215 1065 160"/><path d="M1130 300 C1110 245 1165 215 1145 160"/>
+            </g>
+            <circle cx="1090" cy="450" r="300" fill="url(#cupC)"/>
+            <circle cx="1090" cy="450" r="222" fill="url(#cremaC)"/>
+            <ellipse cx="1035" cy="385" rx="140" ry="95" fill="#c89357" opacity=".38" filter="url(#blurC)"/>
+            <ellipse cx="1150" cy="520" rx="90" ry="60" fill="#2f1a0b" opacity=".3" filter="url(#blurC)"/>
+            <circle cx="990" cy="360" r="7" fill="#e9c99a" opacity=".55"/>
+            <circle cx="1180" cy="400" r="6" fill="#e9c99a" opacity=".5"/>
+            <circle cx="1120" cy="345" r="5" fill="#e9c99a" opacity=".5"/>
+            <circle cx="1015" cy="545" r="6" fill="#e9c99a" opacity=".45"/>
+            <circle cx="1210" cy="500" r="5" fill="#e9c99a" opacity=".4"/>
+          </svg>
           <span class="slide-tag">Bold Espresso</span>
         </div>
-        <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4" style="background:linear-gradient(135deg,#3a2418,#0e211a)">
-          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1800&q=80" alt="A warm cup of coffee resting on a wooden table" loading="lazy" onerror="this.remove()" />
-          <span class="slide-tag">Fresh Pour Over</span>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4">
+          <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A creamy flat white with a ring of microfoam">
+            <defs>
+              <radialGradient id="woodD" cx="60%" cy="40%" r="82%"><stop offset="0%" stop-color="#42311f"/><stop offset="70%" stop-color="#25291d"/><stop offset="100%" stop-color="#111c15"/></radialGradient>
+              <radialGradient id="cremaD" cx="45%" cy="40%" r="64%"><stop offset="0%" stop-color="#e3c9a2"/><stop offset="55%" stop-color="#c2a074"/><stop offset="100%" stop-color="#9a7748"/></radialGradient>
+              <radialGradient id="cupD" cx="42%" cy="38%" r="70%"><stop offset="0%" stop-color="#ffffff"/><stop offset="82%" stop-color="#f1ede4"/><stop offset="100%" stop-color="#dbd3c4"/></radialGradient>
+              <filter id="blurD"><feGaussianBlur stdDeviation="9"/></filter>
+            </defs>
+            <rect width="1600" height="900" fill="url(#woodD)"/>
+            <ellipse cx="1085" cy="505" rx="355" ry="128" fill="#000" opacity=".3" filter="url(#blurD)"/>
+            <g class="steam" opacity=".15" filter="url(#blurD)" stroke="#fff" stroke-width="14" stroke-linecap="round" fill="none">
+              <path d="M1025 255 C1005 195 1065 165 1045 105"/><path d="M1135 255 C1115 195 1175 165 1155 105"/>
+            </g>
+            <circle cx="1085" cy="450" r="335" fill="url(#cupD)"/>
+            <circle cx="1085" cy="450" r="272" fill="url(#cremaD)"/>
+            <ellipse cx="1030" cy="375" rx="160" ry="105" fill="#fbf5ea" opacity=".4" filter="url(#blurD)"/>
+            <circle cx="1085" cy="408" r="46" fill="#fbf5ea" opacity=".9"/>
+            <circle cx="1085" cy="454" r="34" fill="#fbf5ea" opacity=".9"/>
+            <circle cx="1085" cy="491" r="22" fill="#fbf5ea" opacity=".9"/>
+            <path d="M1085 511 L1074 556 L1096 556 Z" fill="#fbf5ea" opacity=".9"/>
+          </svg>
+          <span class="slide-tag">Creamy Flat White</span>
         </div>
       </div>
       <button class="slider-btn prev" aria-label="Previous slide">‹</button>

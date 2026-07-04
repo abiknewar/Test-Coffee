@@ -100,7 +100,10 @@ img { max-width: 100%; display: block; }
   transition: opacity .8s ease; background-size: cover; background-position: center;
 }
 .slide.active { opacity: 1; visibility: visible; }
-.slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.slide img, .slide svg { width: 100%; height: 100%; object-fit: cover; display: block; }
+.slide .steam { animation: steam 7s ease-in-out infinite; transform-origin: center; }
+@keyframes steam { 0%,100% { opacity: .10; transform: translateX(-8px); } 50% { opacity: .24; transform: translateX(8px); } }
+@media (prefers-reduced-motion: reduce) { .slide .steam { animation: none; } }
 .slide::after {
   content: ""; position: absolute; inset: 0;
   background: linear-gradient(90deg, rgba(20,38,31,.78) 0%, rgba(20,38,31,.45) 45%, rgba(20,38,31,.15) 100%);
