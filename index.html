@@ -30,22 +30,39 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div>
-          <p class="eyebrow">Roasted daily · Since 2014</p>
-          <h1>It's a great day for coffee.</h1>
-          <p class="lead">
-            Specialty coffee, fresh-baked pastries, and slow mornings — brewed with care
-            in the heart of the neighborhood.
-          </p>
-          <div class="hero-actions">
-            <a href="menu.html" class="btn btn-primary">View the Menu</a>
-            <a href="contact.html" class="btn btn-outline">Visit Us</a>
+    <section class="slider" aria-label="Featured coffee photos" aria-roledescription="carousel">
+      <div class="slides">
+        <div class="slide active" role="group" aria-roledescription="slide" aria-label="1 of 4" style="background:linear-gradient(135deg,#3a2418,#1e3932)">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1800&q=80" alt="Latte with delicate leaf art in a white cup" loading="eager" onerror="this.remove()" />
+          <div class="slide-caption">
+            <div class="container">
+              <p class="eyebrow">Roasted daily · Since 2014</p>
+              <h1>It's a great day for coffee.</h1>
+              <p class="lead">Specialty coffee, fresh-baked pastries, and slow mornings — brewed with care in the heart of the neighborhood.</p>
+              <div class="hero-actions">
+                <a href="menu.html" class="btn btn-primary">View the Menu</a>
+                <a href="contact.html" class="btn btn-on-dark">Visit Us</a>
+              </div>
+            </div>
           </div>
+          <span class="slide-tag">Signature Latte</span>
         </div>
-        <div class="hero-art" aria-hidden="true"><span class="cup">☕</span></div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 4" style="background:linear-gradient(135deg,#5a3a22,#241812)">
+          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1800&q=80" alt="Overhead view of a cappuccino with foam art" loading="lazy" onerror="this.remove()" />
+          <span class="slide-tag">Velvety Cappuccino</span>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 4" style="background:linear-gradient(135deg,#2d1a10,#1e3932)">
+          <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=1800&q=80" alt="A rich espresso in a small cup on a saucer" loading="lazy" onerror="this.remove()" />
+          <span class="slide-tag">Bold Espresso</span>
+        </div>
+        <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 4" style="background:linear-gradient(135deg,#3a2418,#0e211a)">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=1800&q=80" alt="A warm cup of coffee resting on a wooden table" loading="lazy" onerror="this.remove()" />
+          <span class="slide-tag">Fresh Pour Over</span>
+        </div>
       </div>
+      <button class="slider-btn prev" aria-label="Previous slide">‹</button>
+      <button class="slider-btn next" aria-label="Next slide">›</button>
+      <div class="slider-dots" role="tablist" aria-label="Choose slide"></div>
     </section>
 
     <section class="promo promo--green">
